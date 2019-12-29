@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sorting Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SortingController" customModule="Sorting_Visualizer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sorting Visualizer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CqZ-N6-8gZ">
+                                <rect key="frame" x="345" y="7" width="206.5" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FxD-0W-vAO">
+                                <rect key="frame" x="60" y="44" width="776" height="349"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DCf-Ts-Vkl">
+                                        <rect key="frame" x="0.0" y="313" width="776" height="36"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctW-9g-M01">
+                                                <rect key="frame" x="0.0" y="0.0" width="253.5" height="36"/>
+                                                <color key="backgroundColor" red="0.47058823529411764" green="0.58823529411764708" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <color key="tintColor" red="0.36470588235294116" green="0.066666666666666666" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Bubble">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="sortingChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aYX-Do-7ZC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQ6-c6-Teu">
+                                                <rect key="frame" x="261.5" y="0.0" width="253" height="36"/>
+                                                <color key="backgroundColor" red="0.47174316199999999" green="0.58878058649999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <color key="tintColor" red="0.36470588235294116" green="0.066666666666666666" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Insertion">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="sortingChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TED-z7-gs5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEO-bl-RHQ">
+                                                <rect key="frame" x="522.5" y="0.0" width="253.5" height="36"/>
+                                                <color key="backgroundColor" red="0.47174316199999999" green="0.58878058649999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <color key="tintColor" red="0.36470588235294116" green="0.066666666666666666" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Selection">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="sortingChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MfY-Pv-7Wl"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="DCf-Ts-Vkl" secondAttribute="trailing" id="ALO-Kd-16u"/>
+                                    <constraint firstItem="DCf-Ts-Vkl" firstAttribute="leading" secondItem="FxD-0W-vAO" secondAttribute="leading" id="Oad-6F-yal"/>
+                                    <constraint firstAttribute="bottom" secondItem="DCf-Ts-Vkl" secondAttribute="bottom" id="t4o-x2-ILH"/>
+                                </constraints>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Odl-Zm-eaO">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="0.47174316199999999" green="0.58878058649999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="0.0"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Title" id="bYc-8J-xIw"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="FxD-0W-vAO" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="0R1-oV-YDx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FxD-0W-vAO" secondAttribute="trailing" constant="16" id="52A-0o-zdw"/>
+                            <constraint firstItem="FxD-0W-vAO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="piQ-H1-HcT"/>
+                            <constraint firstItem="CqZ-N6-8gZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ppL-qA-Jha"/>
+                            <constraint firstItem="FxD-0W-vAO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="vbF-PF-9Hh"/>
+                            <constraint firstItem="CqZ-N6-8gZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="7" id="wca-0f-leH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bubbleButton" destination="ctW-9g-M01" id="syF-eY-1zC"/>
+                        <outlet property="insertionButton" destination="kQ6-c6-Teu" id="r0d-Tb-mEU"/>
+                        <outlet property="navigationBar" destination="bYc-8J-xIw" id="4BA-Jg-HVo"/>
+                        <outlet property="rectangleView" destination="FxD-0W-vAO" id="aHK-YO-ari"/>
+                        <outlet property="selectionButton" destination="aEO-bl-RHQ" id="bj4-GL-QFu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.91964285714286" y="118.84057971014494"/>
+        </scene>
+    </scenes>
+</document>
